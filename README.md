@@ -6,6 +6,8 @@ Satellites say what grew. Collars say what was eaten. The difference is what's l
 
 ![Paddock Planner](docs/screenshot.png)
 
+**Live demo:** https://paddock-planner-production.up.railway.app (real RAP data for the three US presets; draw your own pasture anywhere in the lower 48)
+
 ## What it does
 
 You draw a pasture polygon (up to 500 vertices and 10,000 acres, the same limits as the Nofence app in the US), drop a water point, and enter the herd. The planner reads herbaceous forage for every 30 m pixel inside the boundary from the Rangeland Analysis Platform, then cuts the pasture into strips of **equal forage rather than equal area**, ordered from the water point, with a start and end date for each strip and a confidence grade that says how much to trust the number. Strips export as GeoJSON, which is the shape a virtual-fence app ingests.
